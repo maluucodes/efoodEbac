@@ -1,0 +1,16 @@
+import Logo from '../../assets/images/logo.png'
+import { HeaderContainer } from './styles'
+
+const HeaderPerfil = () => {
+    return (
+        <HeaderContainer>
+            <div className="container">
+                <a href="#">Restaurantes</a>
+                <img src={Logo} alt="logo" />
+                <a href="#">0 produto(s) no carrinho</a>
+            </div>
+        </HeaderContainer>
+    )
+}
+
+export default HeaderPerfil
