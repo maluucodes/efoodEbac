@@ -1,20 +1,19 @@
 import { BotaoAdicionar, Card, Descricao, Foto, Titulo } from './styles'
 
-type ProductCardProps = {
+type Props = {
     nome: string
     foto: string
     descricao: string
+    onOpen: () => void
 }
 
-const ProductCard = ({ nome, foto, descricao }: ProductCardProps) => {
-    return (
-        <Card>
+const ProductCard = ({ nome, foto, descricao, onOpen }: Props) => (
+    <Card>
         <Foto src={foto} alt={nome} />
         <Titulo>{nome}</Titulo>
         <Descricao>{descricao}</Descricao>
-        <BotaoAdicionar>Adicionar ao carrinho</BotaoAdicionar>
-        </Card>
-    )
-}
+        <BotaoAdicionar onClick={onOpen}>Adicionar ao carrinho</BotaoAdicionar>
+    </Card>
+)
 
 export default ProductCard
