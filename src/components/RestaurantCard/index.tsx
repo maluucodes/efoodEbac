@@ -51,7 +51,7 @@ const RestaurantCard = ({
                 <Descricao>{description}</Descricao>
 
                 <Link to={`/perfil/${id}`}>
-                    <Button title="Saiba mais">Saiba Mais</Button>
+                    <Button title="Saiba mais" type="button">Saiba Mais</Button>
                 </Link>
             </CardContent>
         </CardContainer>
