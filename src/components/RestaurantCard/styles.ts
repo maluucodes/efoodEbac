@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { colors } from '../../styles'
 
 export const CardContainer = styled.div`
-    background-color: ${cores.branco};
-    color: ${cores.rosa};
+    background-color: ${colors.white};
+    color: ${colors.pink};
     position: relative;
-    border: 1px solid ${cores.rosa};
+    border: 1px solid ${colors.pink};
 `
 
 export const CardContent = styled.div`

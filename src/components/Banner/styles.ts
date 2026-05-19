@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { colors } from '../../styles'
 
 interface BannerProps {
     foto: string
 }
 
-export const Imagem = styled.div<BannerProps>`
+export const Image = styled.div<BannerProps>`
     width: 100%;
     height: 280px;
     display: block;
@@ -16,7 +16,7 @@ export const Imagem = styled.div<BannerProps>`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: ${cores.branco};
+    color: ${colors.white};
 
     &::after {
         content: '';

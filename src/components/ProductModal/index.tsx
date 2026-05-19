@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux'
 
 import closeIcon from '../../assets/images/icons/close.png'
 import type { Prato } from '../ProductList'
-import { formataPreco } from '../utils/formatters'
+import { parseToBrl } from '../utils/formatters'
 import { ModalContainer, Modal, BotaoModal, ModalContent } from './styles'
 import { add } from '../../store/reducers/cart'
 
@@ -38,7 +38,7 @@ const ProductModal = ({ product, isVisible, onClose }: Props) => {
                         Serve de <span>{product.porcao}</span>
                     </p>
                     <BotaoModal onClick={addItem}>
-                        Adicionar ao carrinho - {formataPreco(product.preco)}
+                        Adicionar ao carrinho - {parseToBrl(product.preco)}
                     </BotaoModal>
                 </div>
             </ModalContent>

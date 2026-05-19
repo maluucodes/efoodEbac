@@ -1,9 +1,9 @@
-import { HeroContainer, Imagem } from './styles'
+import { HeroContainer, Image } from './styles'
 import Logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 
 const Hero = () => (
-    <Imagem>
+    <Image>
         <HeroContainer>
         <Link to="/">
             <img src={Logo} alt="logo" style={{ cursor: 'pointer' }} />
@@ -12,7 +12,7 @@ const Hero = () => (
             Viva experiências gastronômicas <br /> no conforto da sua casa
         </h1>
         </HeroContainer>
-    </Imagem>
+    </Image>
 )
 
 export default Hero

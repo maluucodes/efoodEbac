@@ -1,4 +1,4 @@
-import { Categoria, Imagem, TituloBanner } from './styles'
+import { Categoria, Image, TituloBanner } from './styles'
 
 type Props = {
     nome: string
@@ -8,12 +8,12 @@ type Props = {
 
 const BannerPerfil = ({ nome, categoria, capa }: Props) => {
     return (
-        <Imagem foto={capa}>
+        <Image foto={capa}>
             <div className="container">
                 <Categoria>{categoria}</Categoria>
                 <TituloBanner>{nome}</TituloBanner>
             </div>
-        </Imagem>
+        </Image>
     )
 }
 export default BannerPerfil

@@ -7,13 +7,25 @@ const api = createApi({
     }),
     endpoints: (builder) => ({
         getRestaurants: builder.query<Restaurante[], void>({
-        query: () => 'restaurantes'
+            query: () => 'restaurantes'
         }),
         getPratos: builder.query<Restaurante, string>({
-        query: (id) => `restaurantes/${id}`
+            query: (id) => `restaurantes/${id}`
+        }),
+        finalizarPedido: builder.mutation<CheckoutResponse, CheckoutPayload>({
+            query: (body) => ({
+                url: 'checkout',
+                method: 'POST',
+                body
+            })
         })
     })
 })
 
-export const { useGetRestaurantsQuery, useGetPratosQuery } = api
+export const {
+    useGetRestaurantsQuery,
+    useGetPratosQuery,
+    useFinalizarPedidoMutation
+} = api
+
 export default api

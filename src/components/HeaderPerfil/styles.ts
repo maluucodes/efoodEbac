@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import FundoHeader from '../../assets/images/fundo-creme.png'
-import { cores } from '../../styles'
+import { colors } from '../../styles'
 
 export const HeaderContainer = styled.header`
     background-image: url(${FundoHeader});
-    background-color: ${cores.bege};
+    background-color: ${colors.beige};
     display: flex;
     align-items: center;
     padding: 40px 0;
@@ -23,7 +23,7 @@ export const HeaderContainer = styled.header`
 
     a {
         background-color: transparent;
-        color: ${cores.rosa};
+        color: ${colors.pink};
         text-decoration: none;
     }
 

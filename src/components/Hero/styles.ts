@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import HeroImg from '../../assets/images/fundo-creme.png'
 import { breakpoints } from '../../styles'
 
-export const Imagem = styled.div`
+export const Image = styled.div`
     background-image: url(${HeroImg});
     width: 100%;
     height: 360px;

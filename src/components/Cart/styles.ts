@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints, cores } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 import { ButtonContainer } from '../Button/styles'
 import remover from '../../assets/images/icons/lixo.png'
 import closeIcon from '../../assets/images/icons/close.png'
@@ -45,7 +45,7 @@ export const CartCloseButton = styled.button`
 `
 
 export const SideBar = styled.aside`
-    background-color: ${cores.rosa};
+    background-color: ${colors.pink};
     z-index: 1001;
     padding: 16px 8px 0 8px;
     max-width: 360px;
@@ -69,7 +69,7 @@ export const SideBar = styled.aside`
     }
 `
 export const CartItem = styled.div`
-    background-color: ${cores.bege};
+    background-color: ${colors.beige};
     display: flex;
     padding: 8px 8px 12px 8px;
     position: relative;
@@ -96,9 +96,74 @@ export const CartItem = styled.div`
 
 export const Price = styled.div`
     display: flex;
-    color: ${cores.corDeFundo};
+    color: ${colors.lightBeige};
     justify-content: space-between;
     font-weight: bold;
     font-size: 16px;
     margin-top: 40px;
+`
+
+export const ContainerFormulario = styled.div`
+    color: ${colors.beige};
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    label {
+        display: block;
+        margin: 8px 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        height: 32px;
+        border: 2px solid transparent;
+        margin-bottom: 8px;
+        padding: 8px;
+        background-color: ${colors.beige};
+        color: #4b4b4b;
+
+        &.erro {
+            border: 2px solid red;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+`
+
+export const Row = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+`
+
+export const EmptyCart = styled.div`
+    color: ${colors.beige};
+    text-align: center;
+    padding: 32px 8px;
+
+    h3 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+`
+
+export const MensagemErro = styled.small`
+    color: #ffb3b3;
+    display: block;
+    margin-top: -4px;
+    margin-bottom: 8px;
+    font-size: 12px;
 `

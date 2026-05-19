@@ -18,17 +18,17 @@ const Footer = () => {
             <Logo src={logo} alt="logo" />
             <SocialLinks>
                 <li>
-                    <a href="#">
+                    <a href="#" title='clique aqui para conhecer nosso insta!'>
                         <img src={instagram} alt="instagram-logo" />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" title='clique aqui para conhecer nosso facebook!'>
                         <img src={facebook} alt="facebook-logo" />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" title='clique aqui para conhecer nosso twitter!'>
                         <img src={twitter} alt="twitter-logo" />
                     </a>
                 </li>

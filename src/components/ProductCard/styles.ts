@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { colors } from '../../styles'
 
 export const Card = styled.div`
     width: 100%;
@@ -7,8 +7,8 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     padding: 8px;
-    background-color: ${cores.rosa};
-    color: ${cores.bege};
+    background-color: ${colors.pink};
+    color: ${colors.beige};
 `
 
 export const Foto = styled.img`
@@ -37,6 +37,6 @@ export const BotaoAdicionar = styled.button`
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
-    background-color: ${cores.bege};
-    color: ${cores.rosa};
+    background-color: ${colors.beige};
+    color: ${colors.pink};
 `
